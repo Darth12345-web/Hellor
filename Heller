@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Hub - Hellor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+      color: #f0f0f0;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+      color: #00ffcc;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 10px;
+    }
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    iframe {
+      border: 3px solid #00ffcc;
+      border-radius: 10px;
+      width: 80%;
+      height: 500px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    }
+    .game-card {
+      margin: 40px 0;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+    .glow {
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffcc; }
+      to { text-shadow: 0 0 20px #ffcc00; }
+    }
+  </style>
+</head>
+<body>
+  <header class="glow">🎮 Welcome to Hellor Game Hub 🎮</header>
+  <nav>
+    <a href="#game1">Game 1</a>
+    <a href="#game2">Game 2</a>
+    <a href="#game3">Game 3</a>
+  </nav>
+
+  <section id="game1">
+    <h2>Classic Snake</h2>
+    <div class="game-card">
+      <iframe src="https://playsnake.org/" title="Snake Game"></iframe>
+    </div>
+  </section>
+
+  <section id="game2">
+    <h2>Tetris Online</h2>
+    <div class="game-card">
+      <iframe src="https://tetris.com/play-tetris" title="Tetris Game"></iframe>
+    </div>
+  </section>
+
+  <section id="game3">
+    <h2>Pac-Man</h2>
+    <div class="game-card">
+      <iframe src="https://pacman.live/" title="Pac-Man Game"></iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2>About This Hub</h2>
+    <p>
+      This is a fun experimental site built with GitHub Pages. 
+      You can embed web-based games using simple <code>&lt;iframe&gt;</code> tags. 
+      Customize the look with CSS, add more sections, and make it your own!
+    </p>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Darth12345-web | Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html>
+
